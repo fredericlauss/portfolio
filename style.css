@@ -1,30 +1,46 @@
 *{
     padding: 0;
     margin: 0;
+    color: var(--color-contrast);
 }
 
 
 /* variables */
 
 *{
-    --nav-height: 75px;
+    --nav-height: 55px;
     --color-p: aqua;
     --color-s: yellow;
     --color-contrast: black;
+
+
+    --global-spacing: 0.97rem;
+}
+
+/* général */
+
+a {
+    text-decoration: none;
+    color: var(--color-contrast);
 }
 
 
+/* typo */ 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+h1, h2, h3, h4, h5, h6, p, span, a {
+    font-family: 'Inter', sans-serif;
+}
 
 /* section */ 
 .section {
-    min-height: 500px;
+    min-height: 10px;
     color: var(--color-contrast);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: calc(var(--global-spacing) * 2) 0;
 
 }
 .section:nth-child(odd) {
@@ -39,20 +55,37 @@
     min-height: 10px;
     width: 100%;
     max-width: 1140px;
-    background-color: black;
+    padding: 0 var(--global-spacing);
 }
 
 /* nav */
 
 nav {
+    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-p);
     width: 100%;
+    min-height: var(--nav-height);
 }
 
-nav div {
-    height: var(--nav-height);
+
+nav div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav li {
+    min-width: 75px;
+    margin: 0 var(--global-spacing);
+    padding: calc(var(--global-spacing) * 0.5);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
 }
