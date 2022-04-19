@@ -1,9 +1,10 @@
 *{
-    padding: 0;
-    margin: 0;
     color: var(--color-contrast);
 }
-
+body {
+    padding: 0;
+    margin: 0;
+}
 
 /* variables */
 
@@ -32,20 +33,53 @@ a:hover {
 
 
 
+/* flex */ 
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-enfant {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
 /* btn */ 
 
 .btn {
     border: solid var(--color-contrast) 1.5px;
     border-radius: 0.5px;
-    width: 150px;
     height: auto;
-    padding: calc(var(--global-spacing)*0.5);
+    padding: calc(var(--global-spacing)*0.5) var(--global-spacing);
     text-transform: uppercase;
     font-weight: 300;
 }
 .btn:hover {
     border: solid var(--accent) 1.5px;
-    color: var(--accent);
+    background-color: var(--color-contrast);
+    color: var(--color-p);
+}
+.btn-s {
+    border: solid var(--color-contrast) 1.5px;
+    background-color: var(--color-contrast);
+    color: var(--color-p);
+    border-radius: 0.5px;
+    height: auto;
+    padding: calc(var(--global-spacing)*0.5) var(--global-spacing);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.btn-s:hover {
+    border: solid var(--color-contrast) 1.5px;
+    background-color: transparent;
+    color: var(--color-contrast);
 }
 
 
@@ -137,6 +171,7 @@ nav {
     min-height: var(--nav-height);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     height: var(--nav-height);
+    z-index: 9999;
 }
 
 
@@ -151,7 +186,7 @@ nav div ul {
 
 nav li {
     min-width: 75px;
-    margin: 0 var(--global-spacing);
+    margin: 0 calc(var(--global-spacing) * 0.5);
     padding: calc(var(--global-spacing) * 0.5);
     text-transform: uppercase;
     font-weight: 400;
@@ -162,5 +197,24 @@ nav li {
 /* hero */ 
 
 #hero {
-    height: 90vh;
+    min-height: 90vh;
+}
+
+
+#h1-hero {
+    z-index: 999;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+#h1-hero span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2.5px var(--color-contrast);
+}
+#h1-hero span:nth-child(2) {
+    padding-left: 15%;
+    color: var(--color-contrast);
 }
