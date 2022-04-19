@@ -1,6 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 
 /* variables */
 
+*{
+    --nav-height: 75px;
+    --color-p: aqua;
+    --color-s: yellow;
+    --color-contrast: black;
+}
 
 
 
@@ -9,19 +20,39 @@
 /* section */ 
 .section {
     min-height: 500px;
-    background-color: aqua;
+    color: var(--color-contrast);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-
+.section:nth-child(odd) {
+    background-color: var(--color-p);
+}
+.section:nth-child(even) {
+    background-color: var(--color-s);  
+}
 
 /* wrapper */ 
 .wrapper {
-    height: 250px;
+    min-height: 10px;
     width: 100%;
     max-width: 1140px;
     background-color: black;
+}
+
+/* nav */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-p);
+    width: 100%;
+}
+
+nav div {
+    height: var(--nav-height);
 }
