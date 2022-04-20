@@ -35,6 +35,15 @@ body {
 }
 /* général */
 
+input::placeholder {
+    color: var(--color-contrast);
+    font-size: 1em;
+  }
+  textarea::placeholder {
+    color: var(--color-contrast);
+    font-size: 1em;
+  }
+
 a {
     text-decoration: none;
     color: var(--btn-statu);
@@ -109,6 +118,7 @@ a:hover {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 h1, h2, h3, h4, h5, h6, p, span, a {
     font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 
 h1 {
@@ -153,7 +163,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: calc(var(--global-spacing) * 4) 0;
+    padding: calc(var(--global-spacing) * 2) 0;
 
 }
 .section:nth-child(odd) {
@@ -293,3 +303,70 @@ nav svg:hover {
     justify-content: space-around;
 }
 
+/* formulaire */ 
+#section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-top: calc(var(--global-spacing)*2);
+}
+input {
+    background-color: var(--color-p);
+    border: solid var(--color-contrast) 1px;
+    padding: var(--global-spacing);
+    margin: calc(var(--global-spacing)*0.5);
+    width: 100%;
+}
+textarea {
+    background-color: var(--color-p);
+    border: solid var(--color-contrast) 1px;
+    padding: var(--global-spacing);
+    margin: calc(var(--global-spacing)*0.5);
+    width: 100%;
+    min-height: 150px;
+}
+
+textarea:focus-visible {
+    border: solid var(--btn-hover) 1px;
+    outline: solid var(--btn-hover) 1px;
+}
+
+
+input:focus-visible {
+    border: solid var(--btn-hover) 1px;
+    outline: solid var(--btn-hover) 1px;
+}
+
+#btn-form {
+    width: auto;
+}
+
+.accept-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: var(--global-spacing);
+    margin: calc(var(--global-spacing)*0.5);
+}
+
+.accept-form input{
+    width: auto;
+    margin-right: calc(var(--global-spacing)*2);
+    border: solid var(--btn-hover) 1px;
+}
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+  }
+
+  input[type="checkbox"] {
+    box-shadow: 0 0 0 3px hotpink;
+  }
