@@ -8,7 +8,7 @@ body {
 
 /* variables */
 
-*{
+:root {
     --accent: #FAC900;
     --white: #fff;
     --nav-height: 55px;
@@ -16,19 +16,32 @@ body {
     --color-s: #1F1F1F;
     --color-contrast: #D2D2D2;
 
+    --btn-statu: #FFEA2C;
+    --btn-hover: #FAC900;
+
 
     --global-spacing: 0.97rem;
 }
 
+.light {
+    --accent: #FAC900;
+    --white: #fff;
+    --color-p: #D2D2D2;
+    --color-s: #D2D2D2;
+    --color-contrast: #323432;
+
+    --btn-statu: #323432;
+    --btn-hover: #323432;
+}
 /* général */
 
 a {
     text-decoration: none;
-    color: var(--color-contrast);
+    color: var(--btn-statu);
     transition: color 0.45s ease-in-out;
 }
 a:hover {
-    color: var(--accent);
+    color: var(--btn-hover);
 }
 
 
@@ -52,7 +65,8 @@ a:hover {
 /* btn */ 
 
 .btn {
-    border: solid var(--color-contrast) 1.5px;
+    border: solid var(--btn-statu) 1.5px;
+    color: var(--btn-statu);
     border-radius: 0.5px;
     height: auto;
     padding: calc(var(--global-spacing)*0.5) var(--global-spacing);
@@ -62,13 +76,13 @@ a:hover {
     display: inline-block;
 }
 .btn:hover {
-    border: solid var(--color-contrast) 1.5px;
-    background-color: var(--color-contrast);
+    border: solid var(--btn-hover) 1.5px;
+    background-color: var(--btn-hover);
     color: var(--color-p);
 }
 .btn-s {
-    border: solid var(--color-contrast) 1.5px;
-    background-color: var(--color-contrast);
+    border: solid var(--btn-hover) 1.5px;
+    background-color: var(--btn-hover);
     color: var(--color-p);
     border-radius: 0.5px;
     height: auto;
@@ -79,9 +93,9 @@ a:hover {
     display: inline-block;
 }
 .btn-s:hover {
-    border: solid var(--color-contrast) 1.5px;
+    border: solid var(--btn-statu) 1.5px;
     background-color: transparent;
-    color: var(--color-contrast);
+    color: var(--btn-statu);
 }
 
 
