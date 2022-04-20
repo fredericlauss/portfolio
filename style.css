@@ -9,12 +9,12 @@ body {
 /* variables */
 
 *{
-    --accent: #E8D5CC;
+    --accent: #FAC900;
     --white: #fff;
     --nav-height: 55px;
-    --color-p: #C49D83;
-    --color-s: #BDA18A;
-    --color-contrast: #f5efe6;
+    --color-p: #323432;
+    --color-s: #1F1F1F;
+    --color-contrast: #D2D2D2;
 
 
     --global-spacing: 0.97rem;
@@ -39,15 +39,13 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .flex-enfant {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
 }
 
@@ -59,10 +57,12 @@ a:hover {
     height: auto;
     padding: calc(var(--global-spacing)*0.5) var(--global-spacing);
     text-transform: uppercase;
+    text-align: center;
     font-weight: 300;
+    display: inline-block;
 }
 .btn:hover {
-    border: solid var(--accent) 1.5px;
+    border: solid var(--color-contrast) 1.5px;
     background-color: var(--color-contrast);
     color: var(--color-p);
 }
@@ -74,7 +74,9 @@ a:hover {
     height: auto;
     padding: calc(var(--global-spacing)*0.5) var(--global-spacing);
     text-transform: uppercase;
+    text-align: center;
     font-weight: 300;
+    display: inline-block;
 }
 .btn-s:hover {
     border: solid var(--color-contrast) 1.5px;
@@ -120,7 +122,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: calc(var(--global-spacing) * 2) 0;
+    padding: calc(var(--global-spacing) * 4) 0;
 
 }
 .section:nth-child(odd) {
@@ -144,6 +146,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 nav > div > a {
@@ -200,7 +203,7 @@ nav li {
     min-height: 90vh;
 }
 #hero img {
-    height: 650px;
+    
     object-fit: cover;
 }
 
@@ -225,5 +228,6 @@ nav li {
 }
 
 #hero-enfant {
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
