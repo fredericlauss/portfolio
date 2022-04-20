@@ -44,7 +44,12 @@ a:hover {
     color: var(--btn-hover);
 }
 
-
+.color-link {
+    color: var(--btn-statu);
+}
+.color-link:hover {
+    color: var(--btn-hover);
+}
 
 /* flex */ 
 
@@ -210,6 +215,17 @@ nav li {
     text-align: center;
 }
 
+
+
+/* light mode */ 
+
+nav input[type=checkbox] { 
+    display:none; 
+}
+nav i {
+    cursor: pointer;
+    margin-left: 25px;
+}
 
 /* hero */ 
 
