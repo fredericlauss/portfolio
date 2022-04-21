@@ -5,7 +5,9 @@ body {
     padding: 0;
     margin: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* variables */
 
 :root {
@@ -164,6 +166,7 @@ p {
     justify-content: center;
     align-items: center;
     padding: calc(var(--global-spacing) * 2) 0;
+    padding-top: calc(var(--global-spacing) + var(--nav-height));
 
 }
 .section:nth-child(odd) {
@@ -269,14 +272,26 @@ nav svg:hover {
     fill: var(--btn-hover);
 }
 
-/* hero */ 
+/* hero */
+.div-globalspacing {
+    padding-top: calc(var(--global-spacing)*2);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+} 
+
+.div-globalspacing a{
+    margin-right: var(--global-spacing);
+} 
 
 #hero {
     min-height: 90vh;
+    padding-top: var(--global-spacing);
 }
 #hero img {
     
-    object-fit: cover;
+    object-fit: contain;
+    height: 500px;
 }
 
 #h1-hero {
@@ -300,7 +315,7 @@ nav svg:hover {
 }
 
 #hero-enfant {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* formulaire */ 
@@ -363,10 +378,3 @@ input:focus-visible {
     margin-right: calc(var(--global-spacing)*2);
     border: solid var(--btn-hover) 1px;
 }
-input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px hotpink;
-  }
-
-  input[type="checkbox"] {
-    box-shadow: 0 0 0 3px hotpink;
-  }
