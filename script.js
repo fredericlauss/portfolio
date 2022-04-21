@@ -8,6 +8,3 @@ document.querySelector('#lightmode').addEventListener('change', function(event){
 
 
 
-
-/* nav ancres actif */ 
-

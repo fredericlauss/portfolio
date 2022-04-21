@@ -8,6 +8,12 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+main {
+    min-height: 100vh;
+    background-color: var(--color-p);
+}
+
 /* variables */
 
 :root {
@@ -377,4 +383,43 @@ input:focus-visible {
     width: auto;
     margin-right: calc(var(--global-spacing)*2);
     border: solid var(--btn-hover) 1px;
+}
+
+
+/* footer */ 
+
+#footer {
+    padding: var(--global-spacing) 0;
+    background-color: var(--color-p);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer a,#footer p {
+ font-size: 0.90rem;
+}
+
+/* portfolio */ 
+
+.galerie {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galerie-enfant {
+    width: 20%;
+    border: solid var(--accent) 1px;
 }
