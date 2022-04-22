@@ -42,7 +42,13 @@ main {
     --btn-hover: #323432;
 }
 /* général */
-
+.div-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: calc(var(--global-spacing)*2);
+}
 input::placeholder {
     color: var(--color-contrast);
     font-size: 1em;
@@ -124,7 +130,7 @@ a:hover {
 /* typo */ 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-h1, h2, h3, h4, h5, h6, p, span, a {
+h1, h2, h3, h4, h5, h6, p, span, a, label {
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
@@ -171,7 +177,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: calc(var(--global-spacing) * 2) 0;
+    padding: calc(var(--global-spacing)*2) 0;
     padding-top: calc(var(--global-spacing) + var(--nav-height));
 
 }
@@ -198,11 +204,19 @@ p {
     align-items: center;
     width: 100%;
 }
-
+#nav a svg {
+    height: 75px;
+    width: 75px;
+    margin-left: 0;
+}
+#nav a svg g {
+    height: 75px;
+    width: 75px;
+}
 nav > div > a {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 nav a img {

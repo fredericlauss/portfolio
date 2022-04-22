@@ -1,7 +1,7 @@
 <footer id="footer">
     <div class="wrapper" id="wrapper-footer">
         <div>
-            <p>copyright</p>
+            <p>copyrights</p>
         </div>
         <div>
         <a href="#">mentions légales</a>

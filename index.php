@@ -34,6 +34,9 @@
                 <h2>à-propos</h2>
                 <h3>test</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="div-center">
+                    <a class="btn-s" href="portfolio.php">à propos</a>
+                </div>
             </div>
         </div>
         <div class="section">
@@ -46,6 +49,9 @@
                     <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
                     <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
                 </div>
+                <div class="div-center">
+                    <a class="btn-s" href="portfolio.php">portfolio</a>
+                </div>
             </div>
         </div>
         <div id="section-formulaire" class="section">
@@ -57,7 +63,7 @@
                     <input type="email" name="mail" placeholder="E-mail"autocomplete="off">
                     <textarea placeholder="Votre message" ></textarea>
                     <label class="accept-form" for="accept"><input type="checkbox" name="accept" required="">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale qui peut en découler (*).</label>
-                    <input class="btn" id="btn-form" type="submit" name="valider">
+                    <input class="btn-s" id="btn-form" type="submit" name="valider">
                 </form>
             </div>
         </div>
