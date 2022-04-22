@@ -39,7 +39,13 @@
         <div class="section">
             <div class="wrapper">
                 <h2>mes projets</h2>
-                <div id="recepteur-galerie"></div>
+                <h3>Au hasard</h3>
+                <div class="galerie">
+                    <img class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                </div>
             </div>
         </div>
         <div id="section-formulaire" class="section">

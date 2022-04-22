@@ -411,6 +411,7 @@ input:focus-visible {
 /* portfolio */ 
 
 .galerie {
+    padding: var(--global-spacing) 0;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -420,6 +421,6 @@ input:focus-visible {
 }
 
 .galerie-enfant {
-    width: 20%;
+    width: 23.5%;
     border: solid var(--accent) 1px;
 }
