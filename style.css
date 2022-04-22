@@ -422,5 +422,5 @@ input:focus-visible {
 
 .galerie-enfant {
     width: 23.5%;
-    border: solid var(--accent) 1px;
+    border: solid var(--btn-statu) 1px;
 }
