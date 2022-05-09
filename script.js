@@ -26,14 +26,59 @@ window.onload = function(a) {
 };
 
 
-/* verif formaulaire */ 
+  /* verif formaulaire */
+  var x = true;
+
+
+function checkCheckbox (element, id) {
+  if (element.checked == false) {
+    document.getElementById(id).classList.remove("cache");
+    x = false;
+  }
+  else {
+    document.getElementById(id).classList.add("cache");
+  }
+}
+
+function checkErreur(element, id) {
+  if (element.value == '')
+  {
+    document.getElementById(id).classList.remove("cache");
+    x = false;
+  }
+  else
+  {
+    document.getElementById(id).classList.add("cache");
+  }
+
+}
 
 document.querySelector("form").addEventListener("submit", (ev) =>
 {
-  var f = document.forms["form"].elements;
-  for (var i = 0; i < f.length; i++) {
-    if (f[i].value.length == 0) {
+    x = true;
+
+    checkErreur(nom, "verif-nom");
+    checkErreur(prenom, "verif-prenom");
+    checkErreur(mail, "verif-email");
+    checkErreur(message, "verif-message");
+    checkCheckbox(checkbox, "verif-checckbox");
+    
+    if (x === false) {
+      console.log('faux');
       ev.preventDefault();
+      document.getElementById('verif').classList.remove("cache");
+      document.getElementById('verif2').classList.add("cache");
+    }
+    else {
+      document.getElementById('verif').classList.add("cache");
+      document.getElementById('verif2').classList.remove("cache");
+      console.log('vrai');
+      ev.preventDefault();
+    }
+});
+
+/*
+ev.preventDefault();
       document.getElementById('verif').classList.remove("cache");
       document.getElementById('verif-nom').classList.remove("cache");
       document.getElementById('verif-prenom').classList.remove("cache");
@@ -41,14 +86,4 @@ document.querySelector("form").addEventListener("submit", (ev) =>
       document.getElementById('verif-message').classList.remove("cache");
       document.getElementById('verif-checckbox').classList.remove("cache");
       console.log("invalid");
-    } 
-    if (f[i].value.length >= 1) {
-      document.getElementById('verif2').classList.remove("cache");
-      console.log("valid");
-    } 
-    else {
-
-    }
-  }
-  
-});
+*/
