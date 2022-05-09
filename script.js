@@ -18,7 +18,6 @@ document.querySelector('#lightmode').addEventListener('change', function(event){
 });
 
 window.onload = function(a) {
-  console.log(localStorage.getItem('light'))
 
 
   if(localStorage.getItem('light') === "true") {
@@ -27,3 +26,29 @@ window.onload = function(a) {
 };
 
 
+/* verif formaulaire */ 
+
+document.querySelector("form").addEventListener("submit", (ev) =>
+{
+  var f = document.forms["form"].elements;
+  for (var i = 0; i < f.length; i++) {
+    if (f[i].value.length == 0) {
+      ev.preventDefault();
+      document.getElementById('verif').classList.remove("cache");
+      document.getElementById('verif-nom').classList.remove("cache");
+      document.getElementById('verif-prenom').classList.remove("cache");
+      document.getElementById('verif-email').classList.remove("cache");
+      document.getElementById('verif-message').classList.remove("cache");
+      document.getElementById('verif-checckbox').classList.remove("cache");
+      console.log("invalid");
+    } 
+    if (f[i].value.length >= 1) {
+      document.getElementById('verif2').classList.remove("cache");
+      console.log("valid");
+    } 
+    else {
+
+    }
+  }
+  
+});

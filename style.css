@@ -400,6 +400,17 @@ input:focus-visible {
 }
 
 
+/* faire erreur formulaire */ 
+.rouge {
+    color: red;
+  }
+  .vert {
+    color: green;
+}
+.cache {
+    display: none;
+  }
+
 /* footer */ 
 
 #footer {
