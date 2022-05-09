@@ -410,11 +410,26 @@ input:focus-visible {
 .rouge {
     color: var(--color-false);
     padding-top: 0px;
+    font-size: 14px;
   }
+.rouge::before {
+    content: "✖";
+    color: var(--color-false);
+    padding-right: var(--global-spacing);
+    font-size: 14px;
+}
+
 .vert {
     color: var(--color-accept);
     padding-top: 0px;
 }
+.vert::before {
+    content: "✔";
+    color: var(--color-accept);
+    padding-right: var(--global-spacing);
+    font-size: 14px;
+}
+
 .cache {
     display: none;
   }
