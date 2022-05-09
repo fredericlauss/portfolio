@@ -58,12 +58,28 @@
             <div class="wrapper" id="section-form">
                 <h2>me contacter</h2>
                 
-                <form method="POST" action="">
-                    <input type="text" name="speudo" placeholder="Nom" autocomplete="off">
-                    <input type="email" name="mail" placeholder="E-mail"autocomplete="off">
-                    <textarea placeholder="Votre message" ></textarea>
-                    <label class="accept-form" for="accept"><input type="checkbox" name="accept" required="">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale qui peut en découler (*).</label>
+                <form method="POST" action="" name="form">
+                    <div><label for="Nom">Nom</label><p id="verif-nom" class="cache rouge">nom</p></div>
+                    <input id="nom" type="text" name="nom" placeholder="Nom" autocomplete="off">
+                    
+
+                    <div><label for="Prénom">Prénom</label><p id="verif-prenom" class="cache rouge">prénom</p></div>
+                    <input id="prenom" type="text" name="prenom" placeholder="Prénom" autocomplete="off">
+
+                    <div><label for="email">E-mail</label><p id="verif-email" class="cache rouge">e-mail</p></div>
+                    <input id="mail" type="email" name="mail" placeholder="E-mail"autocomplete="off">
+                    
+
+                    <div><label for="email">Votre message</label><p id="verif-message" class="cache rouge">votre message</p></div>
+                    <textarea id="message" placeholder="Votre message"></textarea>
+                    
+
+                    <label class="accept-form" for="accept"><input id="checkbox" type="checkbox" name="accept">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale qui peut en découler (*).</label>
+                    <p id="verif-checckbox" class="cache rouge">il faut cocher du con !</p>
+
                     <input class="btn-s" id="btn-form" type="submit" name="valider">
+                    <p id="verif" class="cache rouge">Le formulaire est invalide</p>
+                    <p id="verif2" class="cache vert">Le formulaire bien envoyé !</p>
                 </form>
             </div>
         </div>
