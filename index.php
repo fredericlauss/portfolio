@@ -14,6 +14,12 @@
     <?php require( __DIR__ . '\partials\header.php')?>
  
     <main>
+    <!-- <?php
+        if(isset($_GET['msg']) && $_GET['msg'] == "ok")
+        {
+            echo "tagada tsoin tsoin";
+        }
+    ?> -->
         <div id="hero" class="section">
             <div class="wrapper flex-row">
                 <div id="hero-enfant" class="flex-enfant">
@@ -58,7 +64,7 @@
             <div class="wrapper" id="section-form">
                 <h2>me contacter</h2>
                 
-                <form method="POST" action="" name="form">
+                <form method="POST" action="validation.php" name="form">
                     <div><label for="Nom">Nom</label><p id="verif-nom" class="cache rouge">nom</p></div>
                     <input id="nom" type="text" name="nom" placeholder="Duncan" autocomplete="off">
                     
@@ -71,15 +77,16 @@
                     
 
                     <div><label for="email">Votre message</label><p id="verif-message" class="cache rouge">votre message</p></div>
-                    <textarea id="message" placeholder="Votre message"></textarea>
+                    <textarea name="message" id="message" placeholder="Votre message"></textarea>
                     
 
                     <label class="accept-form" for="accept"><input id="checkbox" type="checkbox" name="accept">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale qui peut en découler (*).</label>
                     <p id="verif-checckbox" class="cache rouge">il faut cocher du con !</p>
+                    <!-- on peut name de l'input peut etre "rgpd[]" pour avoir un resultat en array  -->
 
                     <input class="btn-s" id="btn-form" type="submit" name="valider">
                     <p id="verif" class="cache rouge">Le formulaire est invalide</p>
-                    <p id="verif2" class="cache vert">Le formulaire bien envoyé !</p>
+                    <!-- <p id="verif2" class="cache vert">Le formulaire bien envoyé !</p> -->
                 </form>
             </div>
         </div>

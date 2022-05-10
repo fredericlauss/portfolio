@@ -26,9 +26,10 @@ window.onload = function(a) {
 };
 
 
-  /* verif formaulaire */
-  var x = true;
+/* verif formaulaire */
 
+
+var x = true;
 
 function checkCheckbox (element, id) {
   if (element.checked == false) {
@@ -64,16 +65,13 @@ document.querySelector("form").addEventListener("submit", (ev) =>
     checkCheckbox(checkbox, "verif-checckbox");
     
     if (x === false) {
-      console.log('faux');
       ev.preventDefault();
       document.getElementById('verif').classList.remove("cache");
       document.getElementById('verif2').classList.add("cache");
     }
     else {
-      document.getElementById('verif').classList.add("cache");
-      document.getElementById('verif2').classList.remove("cache");
-      console.log('vrai');
-      ev.preventDefault();
+      // document.getElementById('verif').classList.add("cache");
+      // document.getElementById('verif2').classList.remove("cache");
     }
 });
 
