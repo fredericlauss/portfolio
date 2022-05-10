@@ -64,7 +64,6 @@ document.querySelector("form").addEventListener("submit", (ev) =>
     checkCheckbox(checkbox, "verif-checckbox");
     
     if (x === false) {
-      console.log('faux');
       ev.preventDefault();
       document.getElementById('verif').classList.remove("cache");
       document.getElementById('verif2').classList.add("cache");
@@ -72,8 +71,6 @@ document.querySelector("form").addEventListener("submit", (ev) =>
     else {
       document.getElementById('verif').classList.add("cache");
       document.getElementById('verif2').classList.remove("cache");
-      console.log('vrai');
-      ev.preventDefault();
     }
 });
 
