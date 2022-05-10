@@ -26,9 +26,10 @@ window.onload = function(a) {
 };
 
 
-  /* verif formaulaire */
-  var x = true;
+/* verif formaulaire */
 
+
+var x = true;
 
 function checkCheckbox (element, id) {
   if (element.checked == false) {
@@ -69,8 +70,8 @@ document.querySelector("form").addEventListener("submit", (ev) =>
       document.getElementById('verif2').classList.add("cache");
     }
     else {
-      document.getElementById('verif').classList.add("cache");
-      document.getElementById('verif2').classList.remove("cache");
+      // document.getElementById('verif').classList.add("cache");
+      // document.getElementById('verif2').classList.remove("cache");
     }
 });
 

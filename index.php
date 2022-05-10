@@ -14,6 +14,12 @@
     <?php require( __DIR__ . '\partials\header.php')?>
  
     <main>
+    <!-- <?php
+        if(isset($_GET['msg']) && $_GET['msg'] == "ok")
+        {
+            echo "tagada tsoin tsoin";
+        }
+    ?> -->
         <div id="hero" class="section">
             <div class="wrapper flex-row">
                 <div id="hero-enfant" class="flex-enfant">
@@ -58,7 +64,7 @@
             <div class="wrapper" id="section-form">
                 <h2>me contacter</h2>
                 
-                <form method="POST" action="exo-formulaire-php.php" name="form">
+                <form method="POST" action="validation.php" name="form">
                     <div><label for="Nom">Nom</label><p id="verif-nom" class="cache rouge">nom</p></div>
                     <input id="nom" type="text" name="nom" placeholder="Duncan" autocomplete="off">
                     
@@ -80,7 +86,7 @@
 
                     <input class="btn-s" id="btn-form" type="submit" name="valider">
                     <p id="verif" class="cache rouge">Le formulaire est invalide</p>
-                    <p id="verif2" class="cache vert">Le formulaire bien envoyé !</p>
+                    <!-- <p id="verif2" class="cache vert">Le formulaire bien envoyé !</p> -->
                 </form>
             </div>
         </div>
