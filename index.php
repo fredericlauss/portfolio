@@ -60,14 +60,14 @@
                 
                 <form method="POST" action="" name="form">
                     <div><label for="Nom">Nom</label><p id="verif-nom" class="cache rouge">nom</p></div>
-                    <input id="nom" type="text" name="nom" placeholder="Nom" autocomplete="off">
+                    <input id="nom" type="text" name="nom" placeholder="Duncan" autocomplete="off">
                     
 
                     <div><label for="Prénom">Prénom</label><p id="verif-prenom" class="cache rouge">prénom</p></div>
-                    <input id="prenom" type="text" name="prenom" placeholder="Prénom" autocomplete="off">
+                    <input id="prenom" type="text" name="prenom" placeholder="Michel" autocomplete="off">
 
                     <div><label for="email">E-mail</label><p id="verif-email" class="cache rouge">e-mail</p></div>
-                    <input id="mail" type="email" name="mail" placeholder="E-mail"autocomplete="off">
+                    <input id="mail" type="email" name="mail" placeholder="honorable.michel.ducan@gmail.com"autocomplete="off">
                     
 
                     <div><label for="email">Votre message</label><p id="verif-message" class="cache rouge">votre message</p></div>
