@@ -5,8 +5,14 @@ body {
     padding: 0;
     margin: 0;
 }
+
+ul {
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
+    font-size: var(--font-size);
 }
 
 main {
@@ -17,6 +23,9 @@ main {
 /* variables */
 
 :root {
+    --font-size: 1rem;
+    --page-margin: 4vw;
+
     --accent: #FAC900;
     --white: #fff;
     --nav-height: 55px;
@@ -29,6 +38,8 @@ main {
 
     --color-accept: #05FF05;
     --color-false: #FFADAD;
+
+    --color-gaelerie: #1f1f1fd8;
 
 
     --global-spacing: 0.97rem;
@@ -46,8 +57,11 @@ main {
 
     --color-accept: #004200;
     --color-false: #660000;
+
+    --color-gaelerie: #D2D2D2d8;
 }
 /* général */
+
 .div-center {
     display: flex;
     flex-direction: column;
@@ -109,7 +123,9 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
     font-weight: 300;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn:hover {
     border: solid var(--btn-hover) 1.5px;
@@ -172,6 +188,12 @@ h3::after {
     padding-left: calc(var(--global-spacing)*0.5);
     font-size: 1rem;
   }
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+  
 p {
     padding-top: 0.5em;
     font-weight: 400;
@@ -185,7 +207,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: calc(var(--global-spacing)*2) 0;
+    padding: var(--page-margin);
     padding-top: calc(var(--global-spacing) + var(--nav-height));
 
 }
@@ -201,7 +223,6 @@ p {
     min-height: 10px;
     width: 100%;
     max-width: 1140px;
-    padding: 0 var(--global-spacing);
 }
 
 /* nav */
@@ -467,10 +488,15 @@ form div {
  font-size: 0.90rem;
 }
 
-/* portfolio */ 
-#hasard > a {
+/* portfolio */
+#hasard {
+    justify-content: space-between;
+} 
+.galerie > a {
     width: 250px;
     height: 250px;
+    position: relative;
+    border: solid var(--btn-statu) 1px;
 }
 #hasard > a > img {
     height: 100%;
@@ -489,5 +515,149 @@ form div {
 
 .galerie-enfant {
     width: 23.5%;
-    border: solid var(--btn-statu) 1px;
+    
+}
+
+.galerie img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.galerie .galerie-titre-p {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gaelerie);
+    /* padding: calc(var(--global-spacing)*0.75) 0; */
+    /* border-top: solid var(--btn-statu) 1px;
+    border-bottom: solid var(--btn-statu) 1px; */
+    transition: height 0.50s ease-in-out;
+    
+}
+
+
+
+.galerie .galerie-titre-p p {
+    text-align: center;
+    padding-top: 7px;
+    color: transparent;
+    height: 0px;
+    transition: color 0.25s ease-in-out, height 0.25s ease-in-out;
+}
+
+
+/* effect galerie */
+
+.galerie a:hover .galerie-titre-p {
+    height: 100%;
+    padding: 0;
+}
+
+.galerie a:hover .galerie-titre-p p {
+    height: auto;
+    color: var(--color-contrast);
+}
+
+
+
+
+/* RESPONSIVE DE MES */ 
+/* 
+@media (max-width: 480px)
+@media (max-width: 992px) */
+
+/* général */ 
+@media (max-width: 992px) {
+
+    :root {
+        --font-size: 14px;
+    }
+    .flex-row {
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 480px) {
+
+    :root {
+        --font-size: 12px;
+    }
+
+}
+
+
+/* header */ 
+@media (max-width: 992px) {
+    #nav {
+        justify-content: space-around;
+    }
+    .nav-left {
+        width: auto;
+    }
+    .nav-right {
+        width: auto; 
+    }
+    #nav {
+        flex-wrap: wrap;
+    }
+    nav {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    nav div ul {
+        display: none;
+    }
+
+}
+
+
+/* footer */ 
+
+@media (max-width: 992px) {
+
+    #wrapper-footer {
+        flex-direction: column;
+    }
+    #wrapper-footer div {
+        margin-top: var(--global-spacing);
+    }
+}
+
+
+/* hero */ 
+
+@media (max-width: 992px) {
+
+    .flex-enfant {
+        width: 100%;
+    }
+    #h1-hero {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #h1-hero span:nth-child(2) {
+        padding-left: 0px;
+        color: var(--color-contrast);
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+
 }

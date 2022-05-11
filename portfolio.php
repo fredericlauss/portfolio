@@ -17,25 +17,85 @@
     <div class="section">
             <div class="wrapper">
                 <h2>mes projets</h2>
-                <h3>2022</h3>
+                <h3>front</h3>
                 <div class="galerie">
-                    <img class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
                 </div>
-                <h3>2021</h3>
+                <h3>back</h3>
                 <div class="galerie">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
                     
                 </div>
-                <h3>2020</h3>
+                <h3>autres</h3>
                 <div class="galerie">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
                     
                 </div>
                 

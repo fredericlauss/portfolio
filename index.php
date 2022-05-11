@@ -31,7 +31,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         <div class="div-globalspacing">
                             <a class="btn" href="a-propos.php">à-propos</a>
-                            <a class="btn-s" href="portfolio.php">portfolio</a>
+                            <a class="btn-s" href="portfolio.php">découvrir mon portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -53,10 +53,34 @@
                 <h2>mes projets</h2>
                 <h3>Au hasard</h3>
                 <div id="hasard"class="galerie">
-                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
-                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
-                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
-                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
+                <a href="portfolio.php">
+                    <img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                    <div class="galerie-titre-p">
+                        <h4>titre</h4>
+                        <p>exemple de texte pour faire cliquer !</p>
+                    </div>
+                </a>
                 </div>
                 <div class="div-center">
                     <a class="btn-s" href="portfolio.php">portfolio</a>
