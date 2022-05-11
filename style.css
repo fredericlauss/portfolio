@@ -27,8 +27,8 @@ main {
     --btn-statu: #FFEA2C;
     --btn-hover: #FAC900;
 
-    --color-accept: green;
-    --color-false: red;
+    --color-accept: #05FF05;
+    --color-false: #FFADAD;
 
 
     --global-spacing: 0.97rem;
@@ -44,8 +44,8 @@ main {
     --btn-statu: #323432;
     --btn-hover: #323432;
 
-    --color-accept: green;
-    --color-false: red;
+    --color-accept: #004200;
+    --color-false: #660000;
 }
 /* général */
 .div-center {
@@ -58,10 +58,12 @@ main {
 input::placeholder {
     color: var(--color-contrast);
     font-size: 1em;
+    opacity: 1;
   }
   textarea::placeholder {
     color: var(--color-contrast);
     font-size: 1em;
+    opacity: 1;
   }
 
 a {
@@ -229,6 +231,7 @@ nav a img {
     height: 100%;
     object-fit: cover;
     width: 100%;
+    object-fit: contain;
 }
 header {
     position: sticky;
@@ -465,6 +468,14 @@ form div {
 }
 
 /* portfolio */ 
+#hasard > a {
+    width: 250px;
+    height: 250px;
+}
+#hasard > a > img {
+    height: 100%;
+    width: 100%;
+}
 
 .galerie {
     padding: var(--global-spacing) 0;

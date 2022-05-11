@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'accueil de mon portfolio. Je suis developper web.">
+    <!-- <meta name=”robots” content=”index,follow”> poser question ??? -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="impression.css" media="print">
 
@@ -27,12 +29,12 @@
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         <div class="div-globalspacing">
-                            <a class="btn" href="">à-propos</a>
+                            <a class="btn" href="a-propos.php">à-propos</a>
                             <a class="btn-s" href="portfolio.php">portfolio</a>
                         </div>
                     </div>
                 </div>
-                <img class="flex-enfant" src="media\Photo Fred détouré - Copie.png" alt="portrait frederic">
+                <img loading="lazy"  width="600" height="600" class="flex-enfant" src="media/frederic-lausson-web-developpeur.webp" alt="portrait frederic lausson croisant les bras">
             </div>
         </div>
         <div class="section">
@@ -49,11 +51,11 @@
             <div class="wrapper">
                 <h2>mes projets</h2>
                 <h3>Au hasard</h3>
-                <div class="galerie">
-                    <img class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
-                    <img class="galerie-enfant" src="media\11_Post-production - Copie.png" alt="marie minchella">
+                <div id="hasard"class="galerie">
+                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
+                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
+                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
+                <a href="portfolio.php"><img loading="lazy"  width="250" height="250" class="galerie-enfant" id="test-galerie" src="media\11_Post-production - Copie.png" alt="marie minchella"></a>
                 </div>
                 <div class="div-center">
                     <a class="btn-s" href="portfolio.php">portfolio</a>
@@ -81,7 +83,7 @@
                     
 
                     <label class="accept-form" for="accept"><input id="checkbox" type="checkbox" name="accept">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale qui peut en découler (*).</label>
-                    <p id="verif-checckbox" class="cache rouge">il faut cocher du con !</p>
+                    <p id="verif-checckbox" class="cache rouge">il faut cocher !</p>
                     <!-- on peut name de l'input peut etre "rgpd[]" pour avoir un resultat en array  -->
 
                     <input class="btn-s" id="btn-form" type="submit" name="valider">

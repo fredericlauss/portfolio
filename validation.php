@@ -16,7 +16,7 @@
 
     if (isset($_POST['prenom']) && !empty($_POST['prenom'])) { 
         $eamil = trim(strip_tags($_POST["prenom"]));
-        $email = filter_var($POST["mail"], FILTER_VALIDATE_EMAIL);
+        // $email = filter_var($POST["mail"], FILTER_VALIDATE_EMAIL);
         } else {
             die('Erreur de ....');
         }
@@ -37,7 +37,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
