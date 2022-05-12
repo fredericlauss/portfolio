@@ -25,6 +25,10 @@
 
 // envoyer base de donné 
 
+// SELECT * FROM `formaulaire de contact` 
+
+
+
 // AJAX pour plus de redirection 
 // redirection 
 // header('Location: http://localhost/portfolio/index.php?msg=ok');

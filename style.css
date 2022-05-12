@@ -650,8 +650,8 @@ form div {
     }
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 480px) {  
+/* 320px voir ce que ca fait  */
     #h1-hero span:nth-child(2) {
         padding-left: 0px;
         color: var(--color-contrast);
