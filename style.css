@@ -1,3 +1,11 @@
+
+ ::selection {
+    color: var(--color-p);
+    background-color: var(--btn-hover);
+  }
+   
+
+
 *{
     color: var(--color-contrast);
 }

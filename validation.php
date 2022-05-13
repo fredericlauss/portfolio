@@ -21,11 +21,26 @@
             die('Erreur de ....');
         }
 
+    if ($mysqlconnection = new PDO('mysql:host=localhost;dbname=testbdd;charset=utf8;', 'root' , "" )) {
+        // PDO_MySQL("INSERT INTO `testbdd` (nom, prénom, e-mail ) VALUES ('$nom', '$prenom', '$eamil' ) ")or die();
+        $request = "INSERT INTO `testbddd`(`nom`, `prénom`, `e-mail`, `message`, `valid`) VALUES ('$nom','$prenom','$eamil','$eamil','$eamil')";
+        $query = $mysqlconnection->query($request);
+        $data = $query->fetchAll();
+
+        } else {
+            echo "Echec de connexion – Veuillez contacter l’adminstrateur" ;
+        }
+
+    } else {
+        die('erreur de complétion du formulaire');
+    }
+/* renvoyer la base de donnée */ 
+// $request = "SELECT * FROM `testbddd` WHERE 1";
+// var_dump($data);
 
 
-// envoyer base de donné 
-
-// SELECT * FROM `formaulaire de contact` 
+?>
+<!-- // SELECT * FROM `formaulaire de contact` 
 
 
 
@@ -33,12 +48,8 @@
 // redirection 
 // header('Location: http://localhost/portfolio/index.php?msg=ok');
 // faire une pop-up de valdiation 
- 
- } else {
-    die('erreur de complétion du formulaire');
- }
+  -->
 
-?>
 
 <!DOCTYPE html>
 <html lang="fr-FR">
