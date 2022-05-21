@@ -577,6 +577,29 @@ form div {
 }
 
 
+/* formulaire page admin */ 
+.flex-row-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--color-contrast);
+    /* margin: var(--global-spacing) 0px; */
+    /* padding: var(--global-spacing); */
+}
+
+.form-input {
+    padding-top: 0px;
+    padding: var(--global-spacing);
+    border: 1px solid var(--color-contrast);
+    flex: 1;
+    text-align: center;
+    
+}
+
+
+
 
 
 /* RESPONSIVE DE MES */ 

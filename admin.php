@@ -24,8 +24,8 @@ if ($mysqlconnection = new PDO('mysql:host=localhost;dbname=testbdd;charset=utf8
 
     $request = "SELECT * FROM `testbddd` WHERE 1";
     $query = $mysqlconnection->query($request);
-    $data = $query->fetchAll();
-    var_dump($data);
+    $data = $query->fetchAll(PDO::FETCH_ASSOC);
+    // var_dump($data);
     echo " ";
     } else {
         echo "Echec de connexion – Veuillez contacter l’adminstrateur" ;
@@ -36,20 +36,33 @@ if ($mysqlconnection = new PDO('mysql:host=localhost;dbname=testbdd;charset=utf8
             <div class='wrapper'>
                 <h2>Mes messages</h2>
                 <h3>formulaire accueil</h3>
+                <div class="flex-row-form"><p class="form-input">Nom</p><p class="form-input">Prénom</p><p class="form-input">e-mail</p><p class="form-input">message</p><p class="form-input">RGPD</p></div>
                 <?php
-                $longueur = count($data);
-                for ($i=0 ; $i<$longueur ; $i++) {
-                    
-                    print_r($data[$i][0] . "<br>");
-                    print_r($data[$i][1] . "<br>");
-                    print_r($data[$i][2] . "<br>");
-                    print_r($data[$i][3] . "<br>");
-                    print_r($data[$i][4] . "<br>");
+                $layoutForm = '<div class="flex-row-form"><p class="form-input">1</p><p class="form-input">2</p><p class="form-input">3</p><p class="form-input">4</p><p class="form-input">5</p></div>';
+                $healthy = array("1", "2", "3", "4", "5");
+                
+                // $longueur = count($data);
+                // for ($i=0 ; $i<$longueur ; $i++) {
+                //     echo $data[$i][0], '<br>', $layoutForm, '<br>';
+                //     echo $data[$i][1], '<br>';
+                //     echo $data[$i][2], '<br>';
+                //     echo $data[$i][3], '<br>';
+                //     echo $data[$i][4], '<br>';
 
-                    // créer tout une variable avec tout le html requis avec variable de dans 
-                    // ganre $ligne = " <div>$data[i][1] </div> "
+                //     // créer tout une variable avec tout le html requis avec variable de dans 
+                //     // ganre $ligne = " <div>$data[i][1] </div> "
+                // }
+                
+                foreach ($data as $element) {
+                
+                        $yummy   = array($element['nom'], $element['prénom'], $element['e-mail'], $element['message'], $element['valid']);
+                        $newphrase = str_replace($healthy, $yummy, $layoutForm);
+                        // foreach ($element as $elementrr) {
+                        //     print_r("<p>$elementrr<p>");
+                        // }
+                        echo $newphrase;
                 }
-
+                    
                 ?>
                 <div>
                 <div></div>
