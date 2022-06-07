@@ -557,9 +557,10 @@ form div {
 
 .galerie .galerie-titre-p p {
     text-align: center;
-    padding-top: 7px;
     color: transparent;
+    padding: 0px;
     height: 0px;
+    width: 80%;
     transition: color 0.25s ease-in-out, height 0.25s ease-in-out;
 }
 
@@ -568,12 +569,15 @@ form div {
 
 .galerie a:hover .galerie-titre-p {
     height: 100%;
-    padding: 0;
+    
+    
 }
 
 .galerie a:hover .galerie-titre-p p {
     height: auto;
     color: var(--color-contrast);
+    padding: 7px;
+    width: 80%;
 }
 
 

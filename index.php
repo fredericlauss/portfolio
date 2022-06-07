@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <img loading="lazy"  width="600" height="600" class="flex-enfant" src="media/frederic-lausson-web-developpeur.webp" alt="portrait frederic lausson croisant les bras">
+                <img loading="lazy"  width="600" height="600" class="flex-enfant" src="media/frederic-lausson-web-developpeur2.png" alt="portrait frederic lausson croisant les bras">
             </div>
         </div>
         <div class="section">
