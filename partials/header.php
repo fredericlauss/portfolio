@@ -5,7 +5,7 @@
                 <ul>
                     <li><a href="a-propos.php">à-propos</a></li>
                     <li><a href="portfolio.php">portfolio</a></li>
-                    <li><a href="portfolio.php">blog</a></li>
+                    
                 </ul>
                 <div class="nav-right">
                     <a class="btn" href="index.php#section-formulaire">contact</a>

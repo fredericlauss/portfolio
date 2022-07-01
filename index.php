@@ -28,7 +28,9 @@
                 <div id="hero-enfant" class="flex-enfant">
                     <h1 id="h1-hero"><span>frédéric</span><span>lausson</span></h1>
                     <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Tryhardeur dans l'âme. Mon credo : rigueur, efficacité, simplicité.
+
+La compétition dans le jeu vidéo m'a permis de développer mon esprit d'équipe et ma communication même dans des moments de stress. C'est là que mes ambitions ont pu pour la première fois voir le jour.</p>
                         <div class="div-globalspacing">
                             <a class="btn" href="a-propos.php">à-propos</a>
                             <a class="btn-s" href="portfolio.php">découvrir mon portfolio</a>
@@ -41,8 +43,10 @@
         <div class="section">
             <div class="wrapper">
                 <h2>à-propos</h2>
-                <h3>test</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Mon parcours</h3>
+                <p>Après plusieurs années de faculté, le besoin de réunir ma passion pour le web développement et mon esprit compétitif ont pris le dessus. L’alternance m'est apparue comme une évidence. J'y vois une opportunité d'apprendre au contact de professionnels et de développer efficacement mes compétences.
+
+Je suis actuellement en alternance chez FTEL Édition.</p>
                 <div class="div-center">
                     <a class="btn-s" href="a-propos.php">à propos</a>
                 </div>

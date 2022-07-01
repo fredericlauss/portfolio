@@ -524,6 +524,7 @@ form div {
 
 .galerie-enfant {
     width: 23.5%;
+    object-fit: contain;
     
 }
 

@@ -14,7 +14,11 @@
     <?php require( __DIR__ . '\partials\header.php')?>
  
     <main>
-        
+    <div class="section">
+            <div class="wrapper">
+            <iframe id="video" width="1080" height="720" src="//www.youtube.com/embed/9B7te184ZpQ?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+    </div>   
     </main>
 
     <?php require( __DIR__ . '\partials\footer.php')?>
